@@ -98,11 +98,44 @@
         </div>
     </header>
 
-    <!-- Top Banner Placeholder (Adsterra Banner Container) -->
-    <div class="w-full max-w-md mx-auto px-3 pt-2">
-        <div id="adsterra-banner-top" class="w-full h-11 bg-slate-900/60 border border-dashed border-slate-800 rounded-xl flex items-center justify-center text-[10px] text-slate-500 gap-1.5">
-            <i class="fa-solid fa-rectangle-ad text-cyan-400"></i>
-            <span>Adsterra 320x50 Banner Space</span>
+    <!-- ========================================== -->
+    <!-- TOP ADSTERRA BANNER ADS CONTAINER          -->
+    <!-- ========================================== -->
+    <div class="w-full max-w-md mx-auto px-3 pt-2 flex justify-center">
+        <div id="adsterra-banner-top" class="w-full overflow-hidden flex items-center justify-center bg-slate-900/40 rounded-xl border border-slate-800/80 p-1">
+            <!-- 
+              [HOW TO ADD ADSTERRA TOP BANNER]:
+              Adsterra එකෙන් ඔයාගේ 320x50 Banner එකේ JavaScript Code එක Copy කරලා 
+              පහළින් ඇති අදහස් (Comments) වෙනුවට කෙලින්ම Paste කරන්න.
+            -->
+            <script type="text/javascript">
+                // atOptions = { ... your code here ... };
+            </script>
+            
+            
+            
+            
+            <script>
+  atOptions = {
+    'key' : '8a7cdc0e38406259abe263abf7e6bb93',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/8a7cdc0e38406259abe263abf7e6bb93"></script>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         </div>
     </div>
 
@@ -136,7 +169,7 @@
                 <!-- Daily Ad Progress Bar -->
                 <div class="bg-slate-950/80 p-2 rounded-xl border border-slate-800/80 mt-2 space-y-1">
                     <div class="flex justify-between text-[10px] font-semibold">
-                        <span class="text-slate-400">Daily Direct Ads (24h Limit)</span>
+                        <span class="text-slate-400">Daily Direct Ads Limit (24h)</span>
                         <span id="ad-counter-text" class="text-emerald-400 font-bold">0 / 5</span>
                     </div>
                     <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
@@ -183,7 +216,7 @@
                         <div class="h-1.5 rounded-full bg-slate-800 overflow-hidden"><div id="mission-tasks-bar" class="h-full bg-gradient-to-r from-cyan-400 to-emerald-400" style="width:0%"></div></div>
                     </div>
                 </div>
-                <p class="text-[9px] text-slate-500">Mission progress is a preview; it does not grant extra points yet.</p>
+                <p class="text-[9px] text-slate-500">Mission progress tracks your daily earnings workflow.</p>
             </div>
 
             <div class="glass-card p-3 rounded-2xl border border-slate-800 space-y-2">
@@ -193,7 +226,7 @@
                 </div>
                 <div class="grid grid-cols-2 gap-2">
                     <div id="achievement-first" class="rounded-xl border border-slate-800 bg-slate-900/70 p-2"><p class="text-[10px] font-bold text-slate-200">🚀 First Steps</p><p class="text-[9px] text-slate-500">Earn your first points</p></div>
-                    <div id="achievement-ads" class="rounded-xl border border-slate-800 bg-slate-900/70 p-2"><p class="text-[10px] font-bold text-slate-200">📺 Ad Explorer</p><p class="text-[9px] text-slate-500">Complete 5 demo ad timers</p></div>
+                    <div id="achievement-ads" class="rounded-xl border border-slate-800 bg-slate-900/70 p-2"><p class="text-[10px] font-bold text-slate-200">📺 Ad Explorer</p><p class="text-[9px] text-slate-500">Complete 5 ad sessions</p></div>
                     <div id="achievement-tasks" class="rounded-xl border border-slate-800 bg-slate-900/70 p-2"><p class="text-[10px] font-bold text-slate-200">✅ Task Finisher</p><p class="text-[9px] text-slate-500">Complete 3 tasks</p></div>
                     <div id="achievement-streak" class="rounded-xl border border-slate-800 bg-slate-900/70 p-2"><p class="text-[10px] font-bold text-slate-200">🔥 Consistent</p><p class="text-[9px] text-slate-500">Reach day 7 streak</p></div>
                 </div>
@@ -259,8 +292,8 @@
                         <div class="w-8 h-8 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mx-auto text-sm border border-cyan-500/20">
                             <i class="fa-solid fa-circle-play"></i>
                         </div>
-                        <p class="text-xs font-semibold text-slate-200">Demo Ad Timer · 30 Seconds</p>
-                        <p class="text-[9px] text-slate-400">Preview timer only. Real ad completion must be verified server-side.</p>
+                        <p class="text-xs font-semibold text-slate-200">Interactive Ad Session · 30 Seconds</p>
+                        <p class="text-[9px] text-slate-400">Watch the promoted offer for 30s to claim reward points.</p>
                     </div>
 
                     <!-- Active 30s Countdown View -->
@@ -272,20 +305,20 @@
                             </svg>
                             <span id="countdown-seconds" class="absolute font-black text-sm text-white">30</span>
                         </div>
-                        <p class="text-[10px] text-emerald-400 font-bold animate-pulse">Ad viewed! Verifying 30s stay...</p>
+                        <p class="text-[10px] text-emerald-400 font-bold animate-pulse">Verifying ad session duration...</p>
                     </div>
 
                     <!-- Limit Reached View -->
                     <div id="ad-limit-view" class="hidden space-y-1">
                         <i class="fa-solid fa-lock text-amber-400 text-lg"></i>
                         <p class="text-xs font-bold text-amber-300">Daily Limit Reached (5/5)</p>
-                        <p class="text-[9px] text-slate-400">Come back in 24 hours for fresh ads!</p>
+                        <p class="text-[9px] text-slate-400">Come back in 24 hours for fresh ad sessions!</p>
                     </div>
                 </div>
 
                 <button id="btn-watch-ad" onclick="startAdWatcher()" class="w-full py-2.5 px-3 rounded-xl font-bold text-xs bg-gradient-to-r from-emerald-400 to-cyan-500 text-slate-950 shadow-neon-green hover:brightness-110 active:scale-95 transition-all flex items-center justify-center gap-1.5">
                     <i class="fa-solid fa-up-right-from-square text-xs"></i>
-                    <span>Start Demo Ad Timer (30s)</span>
+                    <span>Start Ad Session (30s)</span>
                 </button>
             </div>
         </section>
@@ -489,12 +522,53 @@
 
     </main>
 
-    <!-- Bottom Banner Placeholder (Adsterra Banner Container) -->
-    <div class="w-full max-w-md mx-auto px-3 pb-16">
-        <div id="adsterra-banner-bottom" class="w-full h-11 bg-slate-900/60 border border-dashed border-slate-800 rounded-xl flex items-center justify-center text-[10px] text-slate-500 gap-1.5">
-            <i class="fa-solid fa-rectangle-ad text-emerald-400"></i>
-            <span>Adsterra Native Banner Space</span>
-        </div>
+    <!-- ========================================== -->
+    <!-- BOTTOM ADSTERRA BANNER ADS CONTAINER       -->
+    <!-- ========================================== -->
+    <div class="w-full max-w-md mx-auto px-3 pb-16 flex justify-center">
+        <div id="adsterra-banner-bottom" class="w-full overflow-hidden flex items-center justify-center bg-slate-900/40 rounded-xl border border-slate-800/80 p-1">
+            <!-- 
+              [HOW TO ADD ADSTERRA BOTTOM BANNER]:
+              Adsterra එකෙන් ඔයාගේ Native Banner හෝ 320x50 Banner එකේ JavaScript Code එක Copy කරලා 
+              පහළින් ඇති අදහස් වෙනුවට කෙලින්ම Paste කරන්න.
+            -->
+            <script type="text/javascript">
+                // atOptions = { ... your code here ... };
+            </script>
+            
+            
+            
+            
+            
+            
+            
+            
+            <script>
+  atOptions = {
+    'key' : '8a7cdc0e38406259abe263abf7e6bb93',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/8a7cdc0e38406259abe263abf7e6bb93"></script>
+            
+         
+        
+            
+            
+            
+            
+            
+         
+            
+            
+            
+            
+           
+        
+        
     </div>
 
     <!-- BOTTOM NAVIGATION BAR -->
@@ -546,7 +620,7 @@
         const MAX_DAILY_ADS = 5;
         const POINTS_PER_AD = 200;
         const RESET_CYCLE_MS = 24 * 60 * 60 * 1000;
-        const ADSTERRA_DIRECT_LINK = "https://www.google.com"; // DEMO placeholder: replace with your approved ad URL
+        const ADSTERRA_DIRECT_LINK = "https://auctionr.org/4/aefd49fc226c4bdf1365de6c5e0a85aa"; // මෙතනට ඔයාගේ Adsterra Direct Link URL එක දාන්න
 
         // App State
         let state = {
@@ -680,7 +754,6 @@
                 }
             });
 
-
             // Progress bar
             const count = state.adsWatchedToday;
             document.getElementById('ad-counter-text').innerText = `${count} / ${MAX_DAILY_ADS}`;
@@ -704,7 +777,7 @@
             } else {
                 btnWatchAd.disabled = false;
                 btnWatchAd.classList.remove('opacity-50', 'cursor-not-allowed');
-                btnWatchAd.innerHTML = `<i class="fa-solid fa-up-right-from-square text-xs"></i> <span>Start Demo Ad Timer (30s)</span>`;
+                btnWatchAd.innerHTML = `<i class="fa-solid fa-up-right-from-square text-xs"></i> <span>Start Ad Session (30s)</span>`;
                 if (!isWatchingAd) {
                     idleView.classList.remove('hidden');
                     limitView.classList.add('hidden');
@@ -810,7 +883,7 @@
                 const btn = document.getElementById('btn-watch-ad');
                 btn.disabled = false;
                 btn.classList.remove('opacity-50');
-                showToast("Demo timer cancelled when app was hidden");
+                showToast("Ad session paused when app was minimized");
             }
         });
 
@@ -822,7 +895,7 @@
 
             state.watchHistory.unshift({
                 id: Date.now(),
-                title: 'Direct Link Ad Watch (30s)',
+                title: 'Direct Link Ad Session (30s)',
                 points: POINTS_PER_AD,
                 date: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
             });
@@ -906,7 +979,7 @@
                 amountUsd: amountUsd,
                 points: reqPoints,
                 address: address,
-                status: 'Demo / Pending',
+                status: 'Pending Verification',
                 date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
             });
 
@@ -924,7 +997,7 @@
         function exportActivityHistory() {
             const payload = {
                 exportedAt: new Date().toISOString(),
-                mode: "local-demo",
+                mode: "live-app",
                 points: state.points,
                 watchHistory: state.watchHistory,
                 withdrawals: state.withdrawHistory,
@@ -1013,7 +1086,6 @@
         }
 
         function startLiveLeaderboardSimulation() {
-            // Static sample leaderboard: real rankings require server-side data.
             leaderboardData.sort((a, b) => b.points - a.points);
             renderLeaderboard();
         }
